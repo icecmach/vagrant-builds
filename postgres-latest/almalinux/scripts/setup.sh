@@ -3,9 +3,9 @@ dnf install -y make gcc tar gzip flex bison perl libicu-devel readline-devel
 
 echo "---- Install postgres from source ----"
 cd /home/vagrant
-cp /vagrant/software/postgresql-17.4.tar.gz .
-tar -zxf postgresql-17.4.tar.gz
-cd postgresql-17.4
+cp /vagrant/software/postgresql-17.5.tar.gz .
+tar -zxf postgresql-17.5.tar.gz
+cd postgresql-17.5
 
 echo "---- Build ----"
 ./configure

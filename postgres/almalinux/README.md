@@ -1,15 +1,15 @@
-# Postgres on AlmaLinux 9.5
+# Postgres on AlmaLinux 10-kitten
 
 Start the build as follows.
 
-```
+```bash
 cd vagrant-builds/postgres/almalinux
 ➜ vagrant up
 ```
 
 After logging in with user postgres:
 
-```
+```bash
 vagrant-builds/postgres/almalinux
 ➜ vssh
 [vagrant@vbox ~]$ sudo su - postgres

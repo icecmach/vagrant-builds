@@ -1,16 +1,16 @@
-# Postgres on AlmaLinux 9.5
+# Postgres on AlmaLinux 10-kitten
 
-Build based on latest Postgres source code
+This build compiles Postgres from source code
 
 ## Required Software
 
-* [Postgres source](https://www.postgresql.org/ftp/source/)
+- [Postgres source](https://www.postgresql.org/ftp/source/)
 
 Place the software in the "software" directory before calling the vagrant up command.
 
 Directory contents when software is included.
 
-```
+```bash
 ➜ tree
 .
 ├── README.md
@@ -19,7 +19,7 @@ Directory contents when software is included.
 │   ├── setEnv.sh
 │   └── setup.sh
 ├── software
-│   └── postgresql-17.4.tar.gz
+│   └── postgresql-17.5.tar.gz
 └── Vagrantfile
 
 3 directories, 6 files
@@ -27,14 +27,14 @@ Directory contents when software is included.
 
 Start the build as follows.
 
-```
+```bash
 cd vagrant-builds/postgres-latest/almalinux
 ➜ vagrant up
 ```
 
 After logging in with user postgres:
 
-```
+```bash
 vagrant-builds/postgres-latest/almalinux
 ➜ vssh
 [vagrant@vbox ~]$ sudo su - postgres
